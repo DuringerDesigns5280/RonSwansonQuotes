@@ -9,7 +9,6 @@ function getQuote() {
     fetch(apiURL)
     .then(response => response.json())
     .then(data => {
-        console.log(data[0])
         const ron = data[0]	
         let li = document.createElement('li')
         let p = document.createElement('p')
@@ -27,9 +26,7 @@ function getPicture() {
     fetch(apiRon)
     .then(response => response.json())
     .then(ronData => {
-        console.log(ronData)
         var randomIndex = getRandomInt(ronData.length - 1);
-        console.log(ronData[0])
         const ronIMG = ronData[randomIndex].imageURL
         let li = document.createElement('li')
         let img = document.createElement('img')
@@ -46,7 +43,6 @@ function getPicture() {
 // event.handler for button click 
 
 var button = document.querySelector('#button')
-console.log(button)
 button.addEventListener('click', function(event) {
      event.preventDefault()
      getQuote()
