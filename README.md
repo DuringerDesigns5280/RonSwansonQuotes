@@ -12,9 +12,10 @@
 Install lite-server globally 
 $ npm install -g lite-server
 
+# Set Up
 
-Clone this repo
+Fork and Clone this repo
 
-Run Lite-server in the CLI
+Run Lite-server in the CLI (this will run the app locally)
 
 
